@@ -1,0 +1,48 @@
+Onion architecture
+
+Crear un solucion en blanco para agregar
+Crear carpeta de core, infrastructure y presentation
+
+---CORE---
+APPLICATION (BIBLIOTECAS DE CLASE)
+Crear libreria de clases en caperta core con nombre application y borrar la clase que viene creada
+- Instalar MediatR.Extensions.Microsoft.DependencyInjection
+- Instalar AutoMapper
+- Instalar AutoMapper.Extensions.Microsoft.DependencyInjection (yA NO SE NECEITA)
+- Instalar FluentValidation
+- Instalar FluentValidation.DependencyInjectionExtensions
+--Folders--
+-- Behaviours : para validaciones de peticiones funcionan como middlewares (Esto utiliza mediatR y fluentvalidation)
+-- DTOs
+-- Enums
+-- Exceptions
+-- Features
+-- Interfaces
+-- Mappings
+-- Parameters
+-- Specifications
+-- Wrappers
+
+--Clasess--
+ServiceExtencions.cs para 
+
+
+DOMAIN (BIBLIOTECAS DE CLASE)
+Crear otra libreria de clases con nombre domain dentro de core borrar la clase que viene creada
+
+infrastructure
+Crear libreria de clases en caperta core con nombre persisten y borrar la clase que viene creada
+Crear otra libreria de clases con nombre shared dentro de infrastructure borrar la clase que viene creada
+
+Presentation
+ - CREAR UNA ASP NET CORE WEB API
+ - Crear referencia de capa de applicacion, para poder ser utilizada, en este caso vamos a referenciar los servicios
+ de la capa de application en  la web api
+ - Instalar mediatR
+
+ Patrones de diseño
+ CQRS Y MEDIATOR PATTER
+
+ comandos
+ Ctrl + r + g = eliminar using sin uso
+

@@ -16,15 +16,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución",
 		TextFile2.txt = TextFile2.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "application", "application\application.csproj", "{D3318236-C5B4-4081-B7FB-4AB1BCA79012}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "application\Application.csproj", "{D3318236-C5B4-4081-B7FB-4AB1BCA79012}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "domain", "domain\domain.csproj", "{F72F1E17-F231-4138-979D-7C307D36D554}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "domain\Domain.csproj", "{F72F1E17-F231-4138-979D-7C307D36D554}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{D1109992-CC11-4665-96EB-75E9D50F90F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\Persistence.csproj", "{D1109992-CC11-4665-96EB-75E9D50F90F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{0673A51D-2035-4E5C-BDA8-E82E8D8457B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{0673A51D-2035-4E5C-BDA8-E82E8D8457B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{8E46B31A-E45F-4C34-8E46-36FE6E463B31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{8E46B31A-E45F-4C34-8E46-36FE6E463B31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

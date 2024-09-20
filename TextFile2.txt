@@ -11,17 +11,20 @@ Crear libreria de clases en caperta core con nombre application y borrar la clas
 - Instalar AutoMapper.Extensions.Microsoft.DependencyInjection (yA NO SE NECEITA)
 - Instalar FluentValidation
 - Instalar FluentValidation.DependencyInjectionExtensions
+- Instalar Ardalis.specification (Para patron repositorio)
+
 --Folders--
 -- Behaviours : para validaciones de peticiones funcionan como middlewares (Esto utiliza mediatR y fluentvalidation)
 -- DTOs
 -- Enums
 -- Exceptions
--- Features
+-- Features : Aplicaremos CQRS aqui, y aplicaremos el patron mediador (Mediator patter)
+--- NOMBREENTIDAD/Commands:
 -- Interfaces
 -- Mappings
 -- Parameters
 -- Specifications
--- Wrappers
+-- Wrappers : Clases genericas
 
 --Clasess--
 ServiceExtencions.cs para 
@@ -29,11 +32,32 @@ ServiceExtencions.cs para
 
 DOMAIN (BIBLIOTECAS DE CLASE)
 Crear otra libreria de clases con nombre domain dentro de core borrar la clase que viene creada
+--Folders--
+- Common: para entidades heredables
+- Entities: 
 
-infrastructure
-Crear libreria de clases en caperta core con nombre persisten y borrar la clase que viene creada
+-------------------------------------------------------------------------------------------------------
+--INFRACSTRUCTURE--
+PERSISTENCE (BIBLIOTECA DE CLASE)
+
+Crear libreria de clases en caperta core con nombre persistence y borrar la clase que viene creada
+Colocar referencia de capa de aplicacion para poder utilizar las interfaces de application
+
+- Instalar EntityFrameworkCore
+- Instalar EntityFramework.sql
+- Instalar Entensions.Options.ConfigurationExtensions
+- Instalar Ardalis.specification.EntityFramework (Para patron repositorio)
+
+--Folders--
+-- Contexts: representacion de base de dartos via entityframework
+-- Repository: 
+
+
+
+
+SHARED (BIBLIOTECA DE CLASE)
 Crear otra libreria de clases con nombre shared dentro de infrastructure borrar la clase que viene creada
-
+-------------------------------------------------------------------------------------------------------
 Presentation
  - CREAR UNA ASP NET CORE WEB API
  - Crear referencia de capa de applicacion, para poder ser utilizada, en este caso vamos a referenciar los servicios
@@ -41,7 +65,7 @@ Presentation
  - Instalar mediatR
 
  Patrones de diseño
- CQRS Y MEDIATOR PATTER
+ CQRS Y MEDIATOR PATTER PATRON REPOSITORIO
 
  comandos
  Ctrl + r + g = eliminar using sin uso
